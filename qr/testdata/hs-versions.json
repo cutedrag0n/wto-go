@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "code": "H1",
+      "version": "HS-92",
+      "label": "HS 1992"
+    },
+    {
+      "code": "H2",
+      "version": "HS-96",
+      "label": "HS 1996"
+    }
+  ]
+}

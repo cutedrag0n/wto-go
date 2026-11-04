@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "id": "h6-00",
+      "code": "00",
+      "tier": "1",
+      "leaf": "0",
+      "description": {
+        "en": "N/A",
+        "es": "N/A",
+        "fr": "N/A"
+      },
+      "hs_version": "HS-17"
+    },
+    {
+      "id": "h6-01",
+      "code": "01",
+      "tier": "1",
+      "leaf": "6",
+      "description": {
+        "en": "LIVE ANIMALS",
+        "es": "ANIMALES VIVOS",
+        "fr": "ANIMAUX VIVANTS"
+      },
+      "hs_version": "HS-17"
+    },
+    {
+      "id": "h6-0101",
+      "code": "0101",
+      "tier": "2",
+      "leaf": "3",
+      "description": {
+        "en": "Live horses, asses, mules and hinnies",
+        "es": "Caballos, asnos, mulos y burd\u00e9ganos, vivos",
+        "fr": "Chevaux, \u00e2nes, mulets et bardots, vivants"
+      },
+      "hs_version": "HS-17"
+    }
+  ],
+  "links": {
+    "first": "/products?page=1",
+    "last": "/products?page=154",
+    "next": "/products?page=2"
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 154,
+    "links": [
+      {
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "/products?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "/products?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "/products?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "/products?page=4",
+        "label": "4",
+        "active": false
+      },
+      {
+        "url": "/products?page=5",
+        "label": "5",
+        "active": false
+      },
+      {
+        "url": "/products?page=6",
+        "label": "6",
+        "active": false
+      },
+      {
+        "url": "/products?page=7",
+        "label": "7",
+        "active": false
+      },
+      {
+        "url": "/products?page=8",
+        "label": "8",
+        "active": false
+      },
+      {
+        "url": "/products?page=9",
+        "label": "9",
+        "active": false
+      },
+      {
+        "url": "/products?page=10",
+        "label": "10",
+        "active": false
+      },
+      {
+        "label": "...",
+        "active": false
+      },
+      {
+        "url": "/products?page=153",
+        "label": "153",
+        "active": false
+      },
+      {
+        "url": "/products?page=154",
+        "label": "154",
+        "active": false
+      },
+      {
+        "url": "/products?page=2",
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "path": "/products",
+    "per_page": 50,
+    "to": 50,
+    "total": 7663
+  }
+}

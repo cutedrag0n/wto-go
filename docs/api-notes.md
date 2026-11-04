@@ -1,0 +1,14 @@
+# Contract notes
+
+Source: official WTO OpenAPI exports, checked 2026-11-04. Live observations were made against api.wto.org with an authorized subscription. No credentials are included in snapshots or fixtures.
+
+- Timeseries GET/POST `/data`: published success schema describes one DataPointExtended, but descriptions mention arrays and optional metadata. Live machine-headed JSON wraps rows in `Dataset`; full and codes modes both use this envelope. Typed methods extract it. Raw methods retain Summary and other arrays without inventing a complete metadata envelope.
+- Timeseries machine headings are PascalCase in actual output. Go's case-insensitive JSON matching maps these to the officially published camelCase fields. Nullable schema properties use pointers. Some live text contains invalid UTF-8; Go's JSON decoder replaces invalid bytes with U+FFFD, while raw methods retain original bytes.
+- Timeseries `/metadata` returned HTTP 500 for ITS_MTV_AX without reporter filters during the initial smoke test. The official default indicator TP_A_0010 with reporter 840 succeeded. The SDK preserves the original HTTP error; it does not silently substitute indicators.
+- QR list response schemas say arrays, while official examples and live responses use `data/links/meta`. SDK returns that pagination envelope. Detail uses `data` containing one QR, matching the official operation example.
+- QR `/products` repeats hs_version in the official parameter list; SDK sends it once.
+- QR tier/leaf are schema integers but official list examples and live responses encode them as strings. Integer accepts either representation. Interpreted is schema boolean but examples/live responses use 0/1; Boolean accepts both, including quoted 0/1.
+- QR schema calls a member `reporting_member`, operation examples and live list use `reporter_member`; SDK preserves both named fields. Current live lists also use `products` with hs_version/product_code instead of the schema's affected_products. Both structures are represented. mast_codes and qr_sn are present in official operation examples.
+- ePing Members and TFAD have no official response model: their response is json.RawMessage. Empty/unspecified ePing nested schemas remain raw JSON; no type is inferred from an empty array or null alone. Nullable live notification fields use pointers even when the published schema omits nullable.
+- TFAD countries[] uses repeated query keys and ISO 3166 numeric codes preserved as strings. ePing countryIds uses repeated query keys per OpenAPI's default form/explode array encoding.
+- Subscription limits supplied for this implementation: 10 calls/second, 10,000 calls/hour, and a shared 1 call/second for Timeseries data/data_count. Because window alignment is unspecified, the local hourly quota uses a conservative rolling window; second-level buckets use burst 1.

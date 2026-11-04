@@ -1,0 +1,62 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Trade Facilitation Agreement Database (TFAD)",
+    "description": "Returns the Trade Facilitation Agreement Database (TFAD) data for Import Export and Transit procedures [Article 1.4 a) and b)], Contact Information of the enquiry points [Article 1.4 c) and the operation of the Single Window (Article 10.4), for all Members or a given list of Members.",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.wto.org/tfad"
+    }
+  ],
+  "paths": {
+    "/transparency/procedures_contacts_single_window": {
+      "get": {
+        "summary": "procedures_contacts_single_window",
+        "description": "Returns the Trade Facilitation Agreement Database (TFAD) data for Import Export and Transit procedures [Article 1.4 a) and b)], Contact Information of the enquiry points [Article 1.4 c) and the operation of the Single Window (Article 10.4), for all Members or a given list of Members.",
+        "operationId": "get-transparency-procedures_contacts_single_window",
+        "parameters": [
+          {
+            "name": "countries[]",
+            "in": "query",
+            "description": "Country codes are to be sent in the ISO 3166-1 Numeric format",
+            "schema": {
+              "type": "array"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "422": {
+            "description": "If a member cannot be found, or the request parameters are poorly formed."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "apiKeyHeader": {
+        "type": "apiKey",
+        "name": "Ocp-Apim-Subscription-Key",
+        "in": "header"
+      },
+      "apiKeyQuery": {
+        "type": "apiKey",
+        "name": "subscription-key",
+        "in": "query"
+      }
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    }
+  ]
+}

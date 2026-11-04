@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "id": 9,
+      "in_force_from": "2014-10-01",
+      "termination_dt": "2016-09-30",
+      "reporter_member": {
+        "code": "C004",
+        "name": {
+          "en": "Afghanistan",
+          "es": "Afganist\u00e1n",
+          "fr": "Afghanistan"
+        }
+      },
+      "general_description": "Re-exportation prohibition",
+      "national_legal_bases": "NA",
+      "administrative_mechanisms": "NA",
+      "restrictions": [
+        "P-X "
+      ],
+      "measures": [
+        {
+          "flow": "export",
+          "symbol": "P-X",
+          "group_name": "P",
+          "mast_codes": [
+            "P31"
+          ],
+          "description": {
+            "en": "Prohibition",
+            "es": "Prohibici\u00f3n",
+            "fr": "Prohibition"
+          },
+          "interpreted": 0
+        }
+      ],
+      "responsible_entities": [],
+      "notified_in": [
+        {
+          "qr_sn": 9,
+          "notification_dt": "2016-07-29",
+          "document_symbol": "G/MA/QR/N/AFG/1",
+          "document_url": "https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?MetaCollection=WTO&SymbolList=G/MA/QR/N/AFG/1",
+          "original_language": "en",
+          "type": "complete-notification",
+          "covered_periods": [
+            "2014-2016"
+          ]
+        }
+      ],
+      "details": "/qrs/9"
+    },
+    {
+      "id": 10,
+      "in_force_from": "2014-10-01",
+      "termination_dt": "2016-09-30",
+      "reporter_member": {
+        "code": "C004",
+        "name": {
+          "en": "Afghanistan",
+          "es": "Afganist\u00e1n",
+          "fr": "Afghanistan"
+        }
+      },
+      "general_description": "Re-exportation prohibition",
+      "national_legal_bases": "N/A",
+      "administrative_mechanisms": "",
+      "restrictions": [
+        "P-X "
+      ],
+      "measures": [
+        {
+          "flow": "export",
+          "symbol": "P-X",
+          "group_name": "P",
+          "mast_codes": [
+            "P31"
+          ],
+          "description": {
+            "en": "Prohibition",
+            "es": "Prohibici\u00f3n",
+            "fr": "Prohibition"
+          },
+          "interpreted": 0
+        }
+      ],
+      "responsible_entities": [],
+      "notified_in": [
+        {
+          "qr_sn": 10,
+          "notification_dt": "2016-07-29",
+          "document_symbol": "G/MA/QR/N/AFG/1",
+          "document_url": "https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?MetaCollection=WTO&SymbolList=G/MA/QR/N/AFG/1",
+          "original_language": "en",
+          "type": "complete-notification",
+          "covered_periods": [
+            "2014-2016"
+          ]
+        }
+      ],
+      "details": "/qrs/9"
+    }
+  ],
+  "links": {
+    "first": "/qrs?page=1",
+    "last": "/qrs?page=35",
+    "next": "/qrs?page=2"
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 35,
+    "links": [
+      {
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "/qrs?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=4",
+        "label": "4",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=5",
+        "label": "5",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=6",
+        "label": "6",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=7",
+        "label": "7",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=8",
+        "label": "8",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=9",
+        "label": "9",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=10",
+        "label": "10",
+        "active": false
+      },
+      {
+        "label": "...",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=34",
+        "label": "34",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=35",
+        "label": "35",
+        "active": false
+      },
+      {
+        "url": "/qrs?page=2",
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "path": "/qrs",
+    "per_page": 50,
+    "to": 50,
+    "total": 1738
+  }
+}

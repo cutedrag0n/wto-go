@@ -1,0 +1,73 @@
+{
+  "data": {
+    "id": 10,
+    "in_force_from": "2014-10-01",
+    "termination_dt": "2016-09-30",
+    "reporter_member": {
+      "code": "C004",
+      "name": {
+        "en": "Afghanistan",
+        "es": "Afganist\u00e1n",
+        "fr": "Afghanistan"
+      }
+    },
+    "general_description": "Re-exportation prohibition",
+    "national_legal_bases": "N/A",
+    "administrative_mechanisms": "N/A",
+    "restrictions": [
+      "P-X "
+    ],
+    "measures": [
+      {
+        "flow": "export",
+        "symbol": "P-X",
+        "group_name": "P",
+        "mast_codes": [
+          "P31"
+        ],
+        "description": {
+          "en": "Prohibition",
+          "es": "Prohibici\u00f3n",
+          "fr": "Prohibition"
+        },
+        "interpreted": 0
+      }
+    ],
+    "affected_products": [
+      {
+        "id": "h5-080231",
+        "code": "080231",
+        "description": {
+          "en": "Fresh or dried walnuts, in shell",
+          "es": "Nueces frescas o secas, con c\u00e1scara",
+          "fr": "Noix communes, fra\u00eeches ou s\u00e8ches, en coques"
+        },
+        "hs_version": "H5"
+      },
+      {
+        "id": "h5-080232",
+        "code": "080232",
+        "description": {
+          "en": "Fresh or dried walnuts, shelled",
+          "es": "Nueces frescas o secas, sin c\u00e1scara",
+          "fr": "Noix communes, fra\u00eeches ou s\u00e8ches, sans coques"
+        },
+        "hs_version": "H5"
+      }
+    ],
+    "responsible_entities": [],
+    "notified_in": [
+      {
+        "qr_sn": 10,
+        "notification_dt": "2016-07-29",
+        "document_symbol": "G/MA/QR/N/AFG/1",
+        "document_url": "https://docs.wto.org/dol2fe/Pages/FE_Search/FE_S_S006.aspx?MetaCollection=WTO&SymbolList=G/MA/QR/N/AFG/1",
+        "original_language": "en",
+        "type": "complete-notification",
+        "covered_periods": [
+          "2014-2016"
+        ]
+      }
+    ]
+  }
+}
